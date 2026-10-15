@@ -1,5 +1,7 @@
 # AppDotEnv
 
+![Appdotenv Logo](https://github.com/homestar9/appdotenv/blob/master/appdotenv-logo.avif?raw=true)
+
 A per-application `.env` for ColdBox apps that share one CFML engine with other sites.
 
 On a typical shared Windows/IIS server, every site runs in the same Adobe ColdFusion (or Lucee)
