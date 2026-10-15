@@ -1,0 +1,63 @@
+{
+    "name":"AppDotEnv",
+    "version":"1.0.0",
+    "author":"Angry Sam Productions, Inc.",
+    "location":"ForgeboxStorage",
+    "slug":"appdotenv",
+    "type":"modules",
+    "packageDirectory":"appdotenv",
+    "keywords":"dotenv,env,secrets,configuration,coldbox,shared-hosting",
+    "homepage":"https://github.com/homestar9/appdotenv",
+    "documentation":"https://github.com/homestar9/appdotenv",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/homestar9/appdotenv"
+    },
+    "bugs":"https://github.com/homestar9/appdotenv/issues",
+    "shortDescription":"A per-application .env for ColdBox apps that share one CFML engine with other sites. Values stay in the application scope, never in the JVM or the OS environment.",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[],
+    "ignore":[
+        "**/.*",
+        "/build/",
+        "/modules/",
+        "/test-harness/",
+        "/test-results/",
+        "/server-*.json",
+        "/server*.json",
+        "/AGENTS.md",
+        "/CLAUDE.md",
+        "/plans/",
+        "/temp/",
+        "/*.code-workspace",
+        "/appdotenv-logo.avif",
+        "**/*.bak",
+        "**/*.zip"
+    ],
+    "dependencies":{},
+    "devDependencies":{
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{},
+    "scripts":{
+        "install:dependencies":"install && cd test-harness && install",
+        "format":"cfformat run models,ModuleConfig.cfc,test-harness/tests/specs --overwrite",
+        "format:check":"cfformat check models,ModuleConfig.cfc,test-harness/tests/specs",
+        "start:2023":"server start serverConfigFile=server-adobe@2023.json",
+        "stop:2023":"server stop serverConfigFile=server-adobe@2023.json",
+        "start:2025":"server start serverConfigFile=server-adobe@2025.json",
+        "stop:2025":"server stop serverConfigFile=server-adobe@2025.json",
+        "start:boxlang":"server start serverConfigFile=server-boxlang-cfml@1.json",
+        "stop:boxlang":"server stop serverConfigFile=server-boxlang-cfml@1.json",
+        "start:lucee6":"server start serverConfigFile=server-lucee@6.json",
+        "stop:lucee6":"server stop serverConfigFile=server-lucee@6.json"
+    },
+    "testbox":{
+        "runner":"http://127.0.0.1:60330/tests/runner.cfm"
+    }
+}

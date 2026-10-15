@@ -1,0 +1,26 @@
+{
+    "name":"appdotenv-test-harness",
+    "version":"1.0.0",
+    "author":"Angry Sam Productions, Inc.",
+    "location":"",
+    "slug":"appdotenv-test-harness",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "shortDescription":"Test harness for the appdotenv module.",
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^7"
+    },
+    "installPaths":{
+        "testbox":"testbox/",
+        "coldbox":"coldbox/"
+    },
+    "dependencies":{
+        "coldbox":"^8"
+    },
+    "scripts":{},
+    "testbox":{
+        "runner":"http://127.0.0.1:60330/tests/runner.cfm"
+    },
+    "reinitWatchDirectory":"../"
+}

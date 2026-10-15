@@ -1,0 +1,3 @@
+# The dotenv fixtures test CRLF line endings and a UTF-8 BOM. Keep their bytes exactly.
+test-harness/tests/resources/dotenv/*.env -text
+*.avif binary

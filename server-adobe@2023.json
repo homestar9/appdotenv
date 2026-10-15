@@ -1,0 +1,27 @@
+{
+    "name":"appdotenv-adobe@2023",
+    "app":{
+        "serverHomeDirectory":".engine/adobe2023",
+        "cfengine":"adobe@2023"
+    },
+    "web":{
+        "http":{
+            "port":"60330"
+        },
+        "rewrites":{
+            "enable":"true"
+        },
+        "webroot":"test-harness",
+        "aliases":{
+            "/moduleroot/appdotenv":"./"
+        }
+    },
+    "jvm":{
+        "heapSize":"512",
+        "javaVersion":"openjdk17_jdk"
+    },
+    "openBrowser":false,
+    "scripts":{
+        "onServerInstall":"cfpm install zip"
+    }
+}

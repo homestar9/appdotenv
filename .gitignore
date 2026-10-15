@@ -1,0 +1,35 @@
+# Anchor directory patterns with a leading "/". CommandBox reads this file
+# when packaging the repository.
+
+# General Ignores + IDE
+.DS_Store
+settings.xml
+WEB-INF
+/.vscode/
+\.idea/
+Thumbs.db
+.engine/**
+/.engine/
+/modules/
+
+# Test Harness
+/test-results/
+/test-harness/coldbox/
+/test-harness/testbox/
+/test-harness/modules/
+/test-harness/logs/
+/test-harness/tests/results/
+
+# These patterns match file names rather than directories.
+.env
+.env.*
+!.env.example
+*.bak
+
+# Developer notes
+plans/**
+.claude/**
+
+# commandbox-release build output
+.tmp/
+.artifacts/

@@ -1,0 +1,30 @@
+{
+    "name":"appdotenv-boxlang@1",
+    "app":{
+        "serverHomeDirectory":".engine/boxlang-cfml",
+        "cfengine":"boxlang@1"
+    },
+    "fusionreactor":{
+        "enable":false
+    },
+    "web":{
+        "http":{
+            "port":"60330"
+        },
+        "rewrites":{
+            "enable":true
+        },
+        "webroot":"test-harness",
+        "aliases":{
+            "/moduleroot/appdotenv":"./"
+        }
+    },
+    "JVM":{
+        "heapSize":"512",
+        "javaVersion":"openjdk21_jre"
+    },
+    "openBrowser":false,
+    "scripts":{
+        "onServerInitialInstall":"install bx-compat-cfml --noSave"
+    }
+}
